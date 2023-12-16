@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: rgb(10, 10, 10);
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .light {
+            height: 10px;
+            width: 400px;
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            /* Center the light div */
+            transform: translateX(-50%);
+            /* Center the light div */
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background: white;
+            box-shadow:
+                0 0px 4px rgb(255, 255, 255),
+                0 0px 40px rgba(0, 0, 255, 0.719),
+                0 20px 40px rgb(211, 211, 255);
+            perspective: 160px;
+        }
+
+        .light::before {
+            content: "";
+            position: absolute;
+            height: 0px;
+            width: 400px;
+            top: 0px;
+            left: 0px;
+            transform: scaleX(1.4) rotateX(30deg);
+            filter: blur(40px);
+            background: linear-gradient(to bottom, rgb(0, 0, 255), rgba(0, 85, 197, 0.534));
+            transition: height 0.5s ease;
+        }
+
+        .light.active::before {
+            height: 400px;
+            /* Height change when active class is added */
+        }
+
+        #card1 {
+            position: absolute;
+            top: 650px;
+            left: 550px;
+        }
+
+        #card1 .content {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            color: #fff;
+            width: 200px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wholebody">
+        <div class="container" style="display: flex; flex-direction: row;">
+            <div class="light"></div>
+            <div class="ourtheme" id="card1">
+                <div class="content">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam molestiae aliquid, reiciendis
+                    voluptatem, repellendus et quo animi quis quidem error maxime vel provident quasi corrupti enim
+                    dolorum tenetur sequi perspiciatis? Perspiciatis placeat voluptatem, vero quidem, obcaecati expedita
+                    modi eveniet repellat iste ipsum quo pariatur. Ipsam error similique praesentium veritatis sint!
+                </div>
+            </div>
+        </div>
+      
+    </div>
+    <!-- ScrollMagic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+
+    <!-- GSAP (TweenMax, TimelineMax, etc.) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+    <script>
+      
+
+
+        // Initialize ScrollMagic controller
+        var controller = new ScrollMagic.Controller();
+
+        // Create a ScrollMagic scene to trigger the function when .light enters the view
+        var scene = new ScrollMagic.Scene({
+            triggerElement: '.light', // Element that triggers the animation
+            triggerHook: 0.4, // Change this value according to when you want the animation to start (0.8 means 80% down the viewport)
+            reverse: false, // Animation only plays once when scrolling down
+        })
+            .on('enter', function () {
+                animateDiv();
+            })
+            // For debugging purposes (you can remove this line in production)
+            .addIndicators({ name: 'Trigger' })
+            .addTo(controller);
+
+        function animateDiv() {
+            var div = document.querySelector('.light');
+            div.classList.toggle('active'); // Toggle the 'active' class
+        }
+
+    </script>
+</body>
+
+</html>
