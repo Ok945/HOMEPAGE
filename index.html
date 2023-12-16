@@ -509,25 +509,32 @@
             .light {
 
                 width: 250px;
-                /* Adjust width for mobile */
+
                 left: 50%;
                 transform: translateX(-50%);
             }
 
             .light::before {
-                width: 100px;
+                width: 150px;
+                left: 30px;
 
 
             }
 
             .light.active::before {
                 height: 150px;
+
             }
 
             #card1 {
-                top: 0;
+
+                top: 70px;
                 left: 0;
-                display: none;
+            }
+
+            #card1 .content {
+                width: 250px;
+                height: 300px;
             }
 
         }
