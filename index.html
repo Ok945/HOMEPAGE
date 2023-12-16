@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body,
         .wholebody {
             background: rgb(36, 34, 34);
         }
@@ -514,15 +515,19 @@
             }
 
             .light::before {
+                width: 100px;
 
-                width: 200px;
-                height: 100px;
 
+            }
+
+            .light.active::before {
+                height: 150px;
             }
 
             #card1 {
                 top: 0;
                 left: 0;
+                display: none;
             }
 
         }
