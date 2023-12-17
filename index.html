@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="navigation.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="navigation.js"></script>
     <style>
         body,
         .wholebody {
@@ -20,7 +23,12 @@
         }
 
 
-
+        .upper-body {
+            background: radial-gradient(ellipse at bottom, #2a1b35 0%, #090a0f 100%);
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
 
         .light {
             height: 10px;
@@ -449,30 +457,11 @@
             }
         }
 
-        .header {
-            background: radial-gradient(ellipse at bottom, #2a1b35 0%, #090a0f 100%);
-            /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); */
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-            color: #fff;
-
-            /* font-weight: bolder; */
-            padding: 10px;
-
-            @media (max-width: 468px) {
-                height: 50vh;
-                /* Adjust height for mobile */
-            }
-        }
 
         .container {
 
             @media (max-width: 368px) {
                 width: 250px;
-                /* Adjust width for mobile */
                 left: 50%;
                 transform: translateX(-50%);
             }
@@ -480,8 +469,9 @@
 
         #card1 {
             position: absolute;
-            top: 650px;
-            left: 550px;
+            top: 50px;
+            left: 500px;
+
         }
 
         #card1 .content {
@@ -494,7 +484,7 @@
             color: #fff;
             width: 300px;
             height: 400px;
-            /* font-weight: bolder; */
+
             padding: 10px;
         }
 
@@ -505,11 +495,14 @@
 
         @media (max-width: 468px) {
 
+            .upper-body {
+                height: 50vh;
+            }
+
 
             .light {
 
                 width: 250px;
-
                 left: 50%;
                 transform: translateX(-50%);
             }
@@ -539,12 +532,47 @@
 
         }
     </style>
+
 </head>
 
 <body>
     <div class="wholebody">
 
-        <header style="display: block; width: 100%;height: 100vh; " class="header"></header>
+        <header class="cd-header">
+            <div class="header-wrapper">
+
+                <div class="nav-but-wrap">
+                    <div class="menu-icon hover-target">
+                        <span class="menu-icon__line menu-icon__line-left"></span>
+                        <span class="menu-icon__line"></span>
+                        <span class="menu-icon__line menu-icon__line-right"></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="upper-body">
+
+        </div>
+
+        <div class="nav">
+            <div class="nav__content">
+                <ul class="nav__list">
+                    <li class="nav__list-item active-nav"><a href="#" class="hover-target">Home</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Events</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">About Us</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Cyclothon</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Marathon</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Forgotten Stories</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Our Team</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Suporting Team</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Accomodation</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Gallery</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Media Sponsors</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
 
 
         <div class="mainbody">
@@ -562,6 +590,39 @@
                 </div>
             </div>
         </div>
+
+        <!-- <div class="second">
+            <div class="zest">
+                <h4>Zest by Number</h4>
+            </div>
+            <div class="wrapper">
+                <div class="container">
+                    <i class="fas fa-utensils"></i>
+                    <span class="num" data-val="400">000</span>
+                    <span class="text">Meals Delivered</span>
+                </div>
+                <div class="container">
+                    <i class="fas fa-smile-beam"></i>
+                    <span class="num" data-val="340">000</span>
+                    <span class="text">Happy Customers</span>
+                </div>
+                <div class="container">
+                    <i class="fas fa-list"></i>
+                    <span class="num" data-val="225">000</span>
+                    <span class="text">Menu Items</span>
+                </div>
+                <div class="container">
+                    <i class="fas fa-star"></i>
+                    <span class="num" data-val="280">000</span>
+                    <span class="text">Five Stars</span>
+                </div>
+                <div class="container">
+                    <i class="fas fa-star"></i>
+                    <span class="num" data-val="280">000</span>
+                    <span class="text">Five Stars</span>
+                </div>
+            </div>
+        </div> -->
     </div>
 
 
