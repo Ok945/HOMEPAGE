@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="zest_by_numbers.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="navigation.js"></script>
     <style>
@@ -34,7 +35,7 @@
             height: 10px;
             width: 400px;
             position: absolute;
-            bottom: -20px;
+            /* bottom: -20px; */
             left: 450px;
             margin: auto;
             border-bottom-left-radius: 10px;
@@ -458,8 +459,12 @@
         }
 
 
-        .container {
-
+        .theme-container {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            height: 100vh;
+            width: 100%;
             @media (max-width: 368px) {
                 width: 250px;
                 left: 50%;
@@ -495,9 +500,7 @@
 
         @media (max-width: 468px) {
 
-            .upper-body {
-                
-            }
+            .upper-body {}
 
 
             .light {
@@ -579,7 +582,7 @@
             <div id="stars"></div>
         </div>
 
-        <div class="container" style="display: flex; flex-direction: row; position: relative;">
+        <div class="theme-container" >
             <div class="light"></div>
             <div class="ourtheme" id="card1">
                 <div class="content">
@@ -591,7 +594,8 @@
             </div>
         </div>
 
-        <!-- <div class="second">
+
+        <div class="second">
             <div class="zest">
                 <h4>Zest by Number</h4>
             </div>
@@ -622,7 +626,9 @@
                     <span class="text">Five Stars</span>
                 </div>
             </div>
-        </div> -->
+        </div>
+
+
     </div>
 
 
@@ -631,7 +637,7 @@
 
     <!-- GSAP (TweenMax, TimelineMax, etc.) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-
+    <script src="zest_by_numbers.js"></script>
     <script>
 
 
