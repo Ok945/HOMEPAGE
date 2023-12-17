@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="zest_by_numbers.css">
+    <link rel="stylesheet" href="cyclo-mara.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="navigation.js"></script>
     <style>
@@ -30,11 +32,11 @@
             position: relative;
         }
 
-
         .light {
             height: 10px;
             width: 400px;
             position: absolute;
+            /* bottom: -20px; */
             left: 450px;
             margin: auto;
             border-bottom-left-radius: 10px;
@@ -459,7 +461,6 @@
 
 
         .theme-container {
-
             display: flex;
             flex-direction: row;
             position: relative;
@@ -535,121 +536,6 @@
             }
 
         }
-
-
-
-
-
-
-
-
-
-
-
-        .second {
-            width: 100%;
-            height: 100vh;
-        }
-
-        body {
-            background-color: #121317;
-        }
-
-        .wrapper {
-            position: relative;
-            width: 80vw;
-            transform: translate(-50%, -50%);
-            top: 50%;
-            left: 50%;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            padding: 10px;
-        }
-
-        .container {
-            width: 28vmin;
-            height: 28vmin;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            padding: 1em 0;
-            position: relative;
-            font-size: 16px;
-            border-radius: 0.5em;
-            background-color: #21242b;
-            border-bottom: 10px solid #18f98f;
-        }
-
-        i {
-            color: #18f98f;
-            font-size: 2.5em;
-            text-align: center;
-        }
-
-        span.num {
-            color: #ffffff;
-            display: grid;
-            place-items: center;
-            font-weight: 600;
-            font-size: 3em;
-        }
-
-        span.text {
-            color: #e0e0e0;
-            font-size: 1em;
-            text-align: center;
-            pad: 0.7em 0;
-            font-weight: 400;
-            line-height: 0;
-        }
-
-        .zest {
-            color: white;
-            text-align: center;
-            padding-top: 50px;
-            font-size: 50px;
-            height: 10%;
-        }
-
-        @media screen and (max-width: 1024px) {
-            .wrapper {
-                width: 85vw;
-            }
-
-            .container {
-                height: 26vmin;
-                width: 26vmin;
-                font-size: 12px;
-            }
-        }
-
-        @media screen and (max-width: 768px) {
-            .wrapper {
-                width: 90vw;
-                flex-wrap: wrap;
-                gap: 30px;
-            }
-
-            .container {
-                width: calc(50% - 40px);
-                height: 30vmin;
-                font-size: 14px;
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-            .wrapper {
-                gap: 15px;
-            }
-
-            .container {
-                width: 100%;
-                height: 25vmin;
-                font-size: 8px;
-            }
-        }
     </style>
 
 </head>
@@ -670,7 +556,9 @@
             </div>
         </header>
 
+        <div class="upper-body">
 
+        </div>
 
         <div class="nav">
             <div class="nav__content">
@@ -690,9 +578,6 @@
                 </ul>
             </div>
         </div>
-        <div class="upper-body">
-
-        </div>
 
 
         <div class="mainbody">
@@ -701,7 +586,6 @@
 
         <div class="theme-container">
             <div class="light"></div>
-            
             <div class="ourtheme" id="card1">
                 <div class="content">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam molestiae aliquid, reiciendis
@@ -711,6 +595,7 @@
                 </div>
             </div>
         </div>
+
 
         <div class="second">
             <div class="zest">
@@ -745,6 +630,330 @@
             </div>
         </div>
 
+
+
+        <div class="third">
+            <div class="gallery">
+                Gallery
+            </div>
+            =
+
+
+            <div class="profile-card">
+
+                <h1 class="marathon">Marathon</h1>
+
+                <div class="tut">
+                    <div class="outer-container">
+
+
+                        <div class="grid grid-1">
+                            <div class="outer outer-first">
+                                <div class="card" style="--delay:-1;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1652466102358-7fc44c47bb94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="--delay:0;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1556621595-6dd9502e265e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="--delay:1;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1580677616212-2fa929e9c2cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="--delay:2;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1605887123413-2275edbe6dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card" style="--delay:2;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1599587997303-86d4294c5df7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-2">
+                            <div class="outer outer-center">
+                                <div class="card" style="--delay:-1;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1652466102358-7fc44c47bb94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="--delay:0;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1556621595-6dd9502e265e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="--delay:1;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1580677616212-2fa929e9c2cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="--delay:2;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1605887123413-2275edbe6dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card" style="--delay:2;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1599587997303-86d4294c5df7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="grid grid-3">
+                            <div class="outer outer-second">
+                                <div class="card" style="--delay:-1;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1652466102358-7fc44c47bb94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="--delay:0;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1556621595-6dd9502e265e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="--delay:1;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1580677616212-2fa929e9c2cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="--delay:2;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1605887123413-2275edbe6dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card" style="--delay:2;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1599587997303-86d4294c5df7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tut">
+                    <div class="outer-container">
+
+
+                        <div class="grid grid-1">
+                            <div class="outer outer-first">
+                                <div class="card" style="--delay:-1;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1652466102358-7fc44c47bb94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="--delay:0;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1556621595-6dd9502e265e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="--delay:1;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1580677616212-2fa929e9c2cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="--delay:2;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1605887123413-2275edbe6dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card" style="--delay:2;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1599587997303-86d4294c5df7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-2">
+                            <div class="outer outer-center">
+                                <div class="card" style="--delay:-1;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1652466102358-7fc44c47bb94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="--delay:0;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1556621595-6dd9502e265e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="--delay:1;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1580677616212-2fa929e9c2cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="--delay:2;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1605887123413-2275edbe6dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card" style="--delay:2;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1599587997303-86d4294c5df7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="grid grid-3">
+                            <div class="outer outer-second">
+                                <div class="card" style="--delay:-1;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1652466102358-7fc44c47bb94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="--delay:0;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1556621595-6dd9502e265e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="--delay:1;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1580677616212-2fa929e9c2cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="--delay:2;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1605887123413-2275edbe6dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card" style="--delay:2;">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="https://images.unsplash.com/photo-1599587997303-86d4294c5df7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                                                alt="Neuschwanstein Castle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
     </div>
 
 
@@ -753,7 +962,7 @@
 
     <!-- GSAP (TweenMax, TimelineMax, etc.) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-
+    <script src="zest_by_numbers.js"></script>
     <script>
 
 
