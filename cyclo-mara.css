@@ -42,7 +42,11 @@
     font-family: sans-serif;
 }
 
-
+.profile-card h2 {
+    margin-top: 16em;
+    margin-bottom: 0.8em;
+    font-size: 1.2rem;
+}
 
 .marathon {
     margin-top: 10px;
@@ -52,11 +56,9 @@
     padding-left: 1rem;
 }
 
-
-.profile-card h2 {
-    margin-top: 16em;
-    margin-bottom: 0.8em;
-    font-size: 1.2rem;
+.tut {
+    height: 80vh;
+    overflow: hidden;
 }
 
 .tut .outer {
@@ -86,7 +88,7 @@
 
 
 .tut .card .img {
-    height: 14em;
+    height: 20em;
     width: 15em;
     position: absolute;
     top: 1.5em;
@@ -96,69 +98,16 @@
 }
 
 
-
-
-
 .tut .card .img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-
-
 .outer:hover .card {
     animation-play-state: paused;
 }
 
-
-
-.outer-first {
-
-    left: 30px;
-
-}
-
-.tut {
-    height: 80vh;
-    overflow: hidden;
-}
-
-.tut .outer-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.outer-second {
-    right: 150px;
-}
-
-.outer-center {
-    left: 600px;
-}
-
-@media (max-width: 468px) {
-
-    .third,
-    .profile-card {
-        height: 400vh;
-    }
-
-    .outer-center {
-        left: 110px;
-    }
-
-
-    .tut {
-        height: 200vh;
-    }
-}
-
-.tut .outer-second .card {
-    animation: animatesecond 15s linear infinite;
-    animation-delay: calc(3s * var(--delay));
-}
 
 .grid {
     height: 60vh;
@@ -168,6 +117,31 @@
     justify-content: center;
     align-items: self-start;
 }
+
+.tut .outer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+
+.outer-first {
+    left: 30px;
+}
+.outer-center {
+    left: 600px;
+}
+.outer-second {
+    right: 150px;
+}
+
+
+.tut .outer-second .card {
+    animation: animatesecond 15s linear infinite;
+    animation-delay: calc(3s * var(--delay));
+}
+
+
 
 
 
@@ -245,5 +219,30 @@
         opacity: 0;
         transform: translateX(100%) scale(0.5);
         /* Move to the right further */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 468px) {
+
+    .third,
+    .profile-card {
+        height: 400vh;
+    }
+
+    .outer-center {
+        left: 110px;
+    }
+
+    .tut {
+        height: 200vh;
     }
 }
