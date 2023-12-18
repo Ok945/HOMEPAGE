@@ -252,4 +252,12 @@
         display: none;
     }
 
+
+    .outer-first,
+    .outer-second {
+        left: 140px;
+    }
+    
+    
+    
 }
