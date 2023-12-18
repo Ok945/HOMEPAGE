@@ -244,4 +244,10 @@
         width: 13em;
     }
 
+
+    .grid-2 {
+
+        display: none;
+    }
+
 }
