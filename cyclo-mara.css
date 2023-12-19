@@ -230,7 +230,7 @@
 
     .third,
     .profile-card {
-        height: 400vh;
+        height: 250vh;
         display: flex;
         flex-direction: column;
         align-items: center;
