@@ -1,0 +1,399 @@
+.fourth {
+    height: 100%;
+    width: 100%;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile_card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 5em rgba(0, 0, 0, 0.2);
+    padding-bottom: 10vh;
+    padding-top: 5vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0.7em;
+}
+
+.head {
+    height: 9vh;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    padding-top: 1vh;
+    font-size: 6vh;
+}
+
+.web {
+    margin-top: 7vh;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-gap: 6vh;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    grid-template-columns: 180px 180px 180px 180px 180px 180px;
+    grid-template-rows: 35vh 35vh 35vh 35vh;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+
+
+.profile_card .popular:before,
+.profile_card .popular2:before,
+.profile_card .popular3:before,
+.profile_card .popular4:before,
+.profile_card .popular5:before,
+.profile_card .popular6:before,
+.profile_card .popular7:before,
+.profile_card .popular8:before,
+.profile_card .popular9:before,
+.profile_card .popular10:before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 0.6rem;
+}
+
+.profile_card .popular img,
+.profile_card .popular2 img,
+.profile_card .popular3 img,
+.profile_card .popular4 img,
+.profile_card .popular5 img,
+.profile_card .popular6 img,
+.profile_card .popular7 img,
+.profile_card .popular8 img,
+.profile_card .popular9 img,
+.profile_card .popular10 img {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.6rem;
+    display: block;
+    top: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.profile_card .popular .content,
+.profile_card .popular2 .content,
+.profile_card .popular3 .content,
+.profile_card .popular4 .content,
+.profile_card .popular5 .content,
+.profile_card .popular6 .content,
+.profile_card .popular7 .content,
+.profile_card .popular8 .content,
+.profile_card .popular9 .content,
+.profile_card .popular10 .content {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile_card .popular .content h3,
+.profile_card .popular2 .content h3,
+.profile_card .popular3 .content h3,
+.profile_card .popular4 .content h3,
+.profile_card .popular5 .content h3,
+.profile_card .popular6 .content h3,
+.profile_card .popular7 .content h3,
+.profile_card .popular8 .content h3,
+.profile_card .popular9 .content h3,
+.profile_card .popular10 .content h3 {
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: center;
+}
+
+.profile_card .popular .content p {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.2;
+    height: 0;
+    overflow: hidden;
+    -moz-animation-delay: 3.5s;
+    -webkit-animation-delay: 3.5s;
+    -o-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+    margin-top: 0;
+}
+
+.profile_card .popular .content ul,
+.profile_card .popular2 .content ul,
+.profile_card .popular3 .content ul,
+.profile_card .popular4 .content ul,
+.profile_card .popular5 .content ul,
+.profile_card .popular6 .content ul,
+.profile_card .popular7 .content ul,
+.profile_card .popular8 .content ul,
+.profile_card .popular9 .content ul,
+.profile_card .popular10 .content ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.profile_card .popular .content ul li i,
+.profile_card .popular2 .content ul li i,
+.profile_card .popular3 .content ul li i,
+.profile_card .popular4 .content ul li i,
+.profile_card .popular5 .content ul li i,
+.profile_card .popular6 .content ul li i,
+.profile_card .popular7 .content ul li i,
+.profile_card .popular8 .content ul li i,
+.profile_card .popular9 .content ul li i,
+.profile_card .popular10 .content ul li i {
+    color: #d9d9d9;
+    font-size: 0.565rem;
+}
+
+.popular.opened img,
+.popular2.opened img,
+.popular3.opened img,
+.popular4.opened img,
+.popular5.opened img,
+.popular6.opened img,
+.popular8.opened img,
+.popular9.opened img,
+.popular10.opened img {
+    height: 40vh;
+}
+
+
+
+.popular7.opened img {
+    width: 217px;
+}
+
+
+.popular.opened .content p,
+.popular2.opened .content p,
+.popular3.opened .content p,
+.popular4.opened .content p,
+.popular5.opened .content p,
+.popular6.opened .content p,
+.popular7.opened .content p,
+.popular8.opened .content p,
+.popular9.opened .content p,
+.popular10.opened .content p {
+    height: auto;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+.profile_card .popular2 .content p,
+.profile_card .popular3 .content p,
+.profile_card .popular4 .content p,
+.profile_card .popular5 .content p,
+.profile_card .popular6 .content p,
+.profile_card .popular7 .content p,
+.profile_card .popular8 .content p,
+.profile_card .popular9 .content p,
+.profile_card .popular10 .content p {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.4;
+    height: 0;
+    overflow: hidden;
+    -moz-animation-delay: 3.5s;
+    -webkit-animation-delay: 3.5s;
+    -o-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+    margin-top: 0;
+}
+
+.profile_card .popular {
+    position: relative;
+    cursor: pointer;
+    z-index: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.profile_card .popular2 {
+    position: relative;
+    cursor: pointer;
+    z-index: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.profile_card .popular3 {
+    position: relative;
+    cursor: pointer;
+    z-index: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.profile_card .popular4 {
+    position: relative;
+    cursor: pointer;
+    z-index: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.profile_card .popular5 {
+    position: relative;
+    cursor: pointer;
+    z-index: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+
+.profile_card .popular6 {
+    position: relative;
+    cursor: pointer;
+    z-index: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 6s;
+    grid-column-end: 7;
+}
+
+
+.profile_card .popular7 {
+    position: relative;
+    cursor: pointer;
+    z-index: 9;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+
+
+.profile_card .popular8 {
+    position: relative;
+    cursor: pointer;
+    z-index: 9;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 7;
+}
+
+.profile_card .popular9 {
+    position: relative;
+    cursor: pointer;
+    z-index: 9;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.profile_card .popular10 {
+    position: relative;
+    cursor: pointer;
+    z-index: 9;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+
+
+.web {
+    margin-top: 7vh;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-gap: 6vh;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    grid-template-columns: 180px 180px 180px 180px 180px 180px;
+    grid-template-rows: 35vh 35vh 35vh 35vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+
+
+@media (max-width: 468px) {
+
+
+
+    .profile_card .popular:before,
+    .profile_card .popular2:before,
+    .profile_card .popular3:before,
+    .profile_card .popular4:before,
+    .profile_card .popular5:before,
+    .profile_card .popular6:before,
+    .profile_card .popular7:before,
+    .profile_card .popular8:before,
+    .profile_card .popular9:before,
+    .profile_card .popular10:before {
+        width: 100%;
+        height: 100%;
+
+    }
+
+
+
+
+
+    .profile_card .popular img,
+    .profile_card .popular2 img,
+    .profile_card .popular3 img,
+    .profile_card .popular4 img,
+    .profile_card .popular5 img,
+    .profile_card .popular6 img,
+    .profile_card .popular7 img,
+    .profile_card .popular8 img,
+    .profile_card .popular9 img,
+    .profile_card .popular10 img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .web {
+        grid-template-columns: 100px 100px 100px 100px 100px 100px;
+        grid-template-rows: 25vh 25vh 25vh 25vh;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
