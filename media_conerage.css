@@ -392,8 +392,33 @@ h2 {
     }
 
     .web {
-        grid-template-columns: 100px 100px 100px 100px 100px 100px;
+        grid-template-columns: 80px 80px 80px 80px 80px 80px;
         grid-template-rows: 25vh 25vh 25vh 25vh;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
+
+
+
+
+    .profile_card .popular {
+        position: relative;
+        cursor: pointer;
+        z-index: 9;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+
+    .profile_card .popular2 {
+        position: relative;
+        cursor: pointer;
+        z-index: 9;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    
 }
