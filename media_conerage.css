@@ -385,9 +385,9 @@ h2 {
     .profile_card .popular8 .content,
     .profile_card .popular9 .content,
     .profile_card .popular10 .content {
-       
+
         padding: 0em;
-     
+
     }
 
     .profile_card .popular img,
@@ -431,20 +431,15 @@ h2 {
         z-index: 9;
         grid-row-start: 1;
         grid-row-end: 2;
-        grid-column-start: 3;
+        grid-column-start: 2;
         grid-column-end: 4;
     }
 
 
 
     .profile_card .popular3 {
-        position: relative;
-        cursor: pointer;
-        z-index: 9;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start: 4;
-        grid-column-end: 7;
+
+        display: none;
     }
 
 
@@ -459,13 +454,7 @@ h2 {
     }
 
     .profile_card .popular5 {
-        /* position: relative;
-        cursor: pointer;
-        z-index: 9;
-        grid-row-start: 3;
-        grid-row-end: 4;
-        grid-column-start: 4;
-        grid-column-end: 6; */
+
         display: none;
     }
 
@@ -500,7 +489,7 @@ h2 {
         grid-row-start: 3;
         grid-row-end: 4;
         grid-column-start: 2;
-        grid-column-end: 7;
+        grid-column-end: 4;
     }
 
     .profile_card .popular9 {
@@ -514,13 +503,46 @@ h2 {
     }
 
     .profile_card .popular10 {
-        position: relative;
-        cursor: pointer;
-        z-index: 9;
-        grid-row-start: 4;
-        grid-row-end: 5;
-        grid-column-start: 4;
-        grid-column-end: 7;
+        display: none;
+    }
+
+
+
+
+
+
+
+    .popular.opened img,
+    .popular2.opened img,
+    .popular3.opened img,
+    .popular4.opened img,
+    .popular5.opened img,
+    .popular6.opened img,
+    .popular8.opened img,
+    .popular9.opened img,
+    .popular10.opened img {
+        height: 28vh;
+    }
+
+
+
+    .popular7.opened img {
+        width: 160px;
+    }
+
+
+    .popular.opened .content p,
+    .popular2.opened .content p,
+    .popular3.opened .content p,
+    .popular4.opened .content p,
+    .popular5.opened .content p,
+    .popular6.opened .content p,
+    .popular7.opened .content p,
+    .popular8.opened .content p,
+    .popular9.opened .content p,
+    .popular10.opened .content p {
+        height: auto;
+        margin-top: 10px;
     }
 
 
