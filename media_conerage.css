@@ -374,7 +374,20 @@ h2 {
 
 
 
-
+    .profile_card .popular .content,
+    .profile_card .popular2 .content,
+    .profile_card .popular3 .content,
+    .profile_card .popular4 .content,
+    .profile_card .popular5 .content,
+    .profile_card .popular6 .content,
+    .profile_card .popular7 .content,
+    .profile_card .popular8 .content,
+    .profile_card .popular9 .content,
+    .profile_card .popular10 .content {
+       
+        padding: 0em;
+     
+    }
 
     .profile_card .popular img,
     .profile_card .popular2 img,
