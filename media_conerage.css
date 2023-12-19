@@ -460,13 +460,7 @@ h2 {
 
 
     .profile_card .popular6 {
-        position: relative;
-        cursor: pointer;
-        z-index: 9;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start: 6s;
-        grid-column-end: 7;
+        display: none;
     }
 
 
