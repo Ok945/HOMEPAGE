@@ -493,7 +493,7 @@ body.nav-active .nav__list-item:nth-child(11) {
 	body.nav-active .nav:before,
 	body.nav-active .nav:after {
 
-		height: 90vh;
+		height: 80vh;
 
 	}
 }
