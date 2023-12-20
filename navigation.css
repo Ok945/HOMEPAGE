@@ -174,7 +174,7 @@ a:hover {
 	position: fixed;
 	visibility: hidden;
 	top: 90px;
-	right:0px;
+	right: 0px;
 	width: 280px;
 	text-align: left;
 }
@@ -483,4 +483,13 @@ body.nav-active .nav__list-item:nth-child(11) {
 .switched #circle {
 	left: 43px;
 	background: #000;
+}
+
+
+
+
+@media screen and (max-width: 580px) {
+	.nav:before {
+		height: 80vh;
+	}
 }
