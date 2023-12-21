@@ -494,7 +494,7 @@ body,
     .light {
 
         width: 250px;
-        left: 50%;
+        /* left: 50%; */
         transform: translateX(-50%);
     }
 
@@ -510,11 +510,7 @@ body,
 
     }
 
-    #card1 {
 
-        top: 70px;
-        left: 45px;
-    }
 
     #card1 .content {
         width: 350px;
