@@ -5,10 +5,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    height: 100vh;
-    overflow: hidden;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+body,
+.wholebody {
+    background: rgb(36, 34, 34);
 }
 
 
