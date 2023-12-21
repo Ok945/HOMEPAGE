@@ -1,3 +1,24 @@
+.both-logo {
+    height: 100%;
+    width: 50%;
+    float: left;
+    margin: 3px;
+}
+
+.both-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
 .upper-body {
     background: radial-gradient(ellipse at bottom, #2a1b35 0%, #090a0f 100%);
     width: 100%;
