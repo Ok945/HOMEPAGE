@@ -1,9 +1,9 @@
 .both-logo {
     height: 100%;
-    width: 50%;
+
     float: left;
     margin: 3px;
-    
+
 }
 
 .both-logo img {
@@ -29,6 +29,24 @@
     justify-content: center;
     flex-direction: column;
 }
+
+
+@media screen and (min-width:900px) {
+    .upper-body {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    #main {
+        display: none;
+    }
+
+}
+
+
+
 
 
 .main-bg {
@@ -58,4 +76,28 @@
     width: 100%;
 
     object-fit: cover;
+}
+
+
+
+
+@media all and (max-width: 468px) {
+
+
+
+    .both-logo {
+        height: 100%;
+        width: 50%;
+        float: left;
+        margin: 3px;
+
+    }
+
+    .both-logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
 }
