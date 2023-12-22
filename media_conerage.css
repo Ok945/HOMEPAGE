@@ -2,7 +2,7 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-
+    /* background: radial-gradient(circle at center top, #ffffff, transparent), linear-gradient(to bottom, #ffffff, #674dfe); */
 }
 
 ul {
@@ -410,7 +410,7 @@ h2 {
         grid-template-rows: 25vh 25vh 25vh 25vh;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 
-        margin-top:10vh ;
+        margin-top: 10vh;
     }
 
 
