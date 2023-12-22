@@ -13,11 +13,14 @@
     <link rel="stylesheet" href="zest_by_numbers.css">
     <link rel="stylesheet" href="media_conerage.css">
     <link rel="stylesheet" href="cyclo-mara.css">
+    <link rel="stylesheet" href="social-media-box.css">
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="navigation.js"></script>
 
 
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Your custom CSS -->
 
 
 </head>
@@ -100,7 +103,7 @@
             </div>
         </div>
 
-        
+
         <div class="upper-body">
             <div class="main-bg">
                 <img src="zest24-home-page-image-removebg-preview.png" alt="">
@@ -137,27 +140,27 @@
                 <div>Zest by Number</div>
             </div>
             <div class="wrapper">
-                <div class="container">
+                <div class="container-box">
                     <i class="fas fa-utensils"></i>
                     <span class="num" data-val="400">000</span>
                     <span class="text">Meals Delivered</span>
                 </div>
-                <div class="container">
+                <div class="container-box">
                     <i class="fas fa-smile-beam"></i>
                     <span class="num" data-val="340">000</span>
                     <span class="text">Happy Customers</span>
                 </div>
-                <div class="container">
+                <div class="container-box">
                     <i class="fas fa-list"></i>
                     <span class="num" data-val="225">000</span>
                     <span class="text">Menu Items</span>
                 </div>
-                <div class="container">
+                <div class="container-box">
                     <i class="fas fa-star"></i>
                     <span class="num" data-val="280">000</span>
                     <span class="text">Five Stars</span>
                 </div>
-                <div class="container">
+                <div class="container-box">
                     <i class="fas fa-star"></i>
                     <span class="num" data-val="280">000</span>
                     <span class="text">Five Stars</span>
@@ -589,14 +592,51 @@
                 </div>
             </div>
         </div>
+        <div class="social-media-box">
+            <div class="toggle">
+                <ion-icon name="share-social"></ion-icon>
+            </div>
+            <li style="--i:1;--clr:#1877f2;">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            </li>
+            <li style="--i:3.5;--clr:#1da1f2;">
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            </li>
+            <li style="--i:5;--clr:#0a66c2;">
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </li>
+            <li style="--i:6;--clr:#c32aa3;">
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
+            <li style="--i:7;--clr:#ff0000;">
+                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+            </li>
+        </div>
 
 
-
-
+        <!-- <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-left">
+                        <h1 class="mb-4">For Any Queries</h1>
+                        <h2 class="mb-4">Contact</h2>
+                        <h3 class="mb-4">zs.zest@coep.ac.in</h3>
+                    </div>
+                    <div class="col-md-6 text-center text-md-right">
+                        <p class="mb-0">&copy; 2023 Copyright: <a href="https://www.coepzest.org/" class="text-light">coepzest</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer> -->
 
 
 
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
@@ -614,7 +654,9 @@
     <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
     <script src="desktop.js"></script>
 
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="social-media-box.js"></script>
 
     <script>
 
