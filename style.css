@@ -426,8 +426,6 @@ body,
 
     @media (max-width: 468px) {
         width: 250px;
-        /* Adjust width for mobile */
-        left: 50%;
         transform: translateX(-50%);
     }
 
@@ -507,7 +505,6 @@ body,
     .light {
 
         width: 250px;
-        /* left: 50%; */
         transform: translateX(-50%);
     }
 
