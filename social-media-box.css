@@ -87,3 +87,33 @@
     font-size: 2.5em;
     box-shadow: 0 0 0 2px var(--clr), 0 0 0 6px #fff;
 }
+
+
+
+
+@media (max-width: 468px) {
+
+
+    .social-media-box {
+        right: 150px;
+
+    }
+
+    .social-media-box .toggle,
+    .social-media-box li a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .social-media-box .toggle {
+        left: 275px;
+    }
+
+    .social-media-box li {
+        margin: 3px;
+    }
+
+
+
+
+}
