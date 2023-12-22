@@ -95,7 +95,7 @@
 
 
     .social-media-box {
-        right: 150px;
+        right: 90px;
 
     }
 
@@ -106,7 +106,8 @@
     }
 
     .social-media-box .toggle {
-        left: 275px;
+        left: 190px;
+        position: absolute;
     }
 
     .social-media-box li {
