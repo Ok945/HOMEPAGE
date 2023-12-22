@@ -9,8 +9,8 @@
 }
 
 .gallery {
-  
-   
+
+
     font-size: 45px;
     font-weight: bold;
 }
@@ -40,7 +40,7 @@
 }
 
 .marathon {
-  
+
     font-size: 45px;
     font-weight: bold;
 
@@ -61,7 +61,7 @@
     position: absolute;
 }
 
-.tut .card {
+.tut .cardbox {
 
     width: 140px;
     opacity: 0;
@@ -74,13 +74,16 @@
 }
 
 
-.tut .card:last-child {
+
+
+
+.tut .cardbox:last-child {
     animation-delay: calc(-3s * var(--delay));
 }
 
 
 
-.tut .card .img {
+.tut .cardbox .img {
     height: 14em;
     width: 13em;
     position: absolute;
@@ -91,13 +94,13 @@
 }
 
 
-.tut .card .img img {
+.tut .cardbox .img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.outer:hover .card {
+.outer:hover .cardbox {
     animation-play-state: paused;
 }
 
@@ -131,7 +134,7 @@
 } */
 
 
-.tut .outer-second .card {
+.tut .outer-second .cardbox {
     animation: animatesecond 15s linear infinite;
     animation-delay: calc(3s * var(--delay));
 }
@@ -245,7 +248,7 @@
         height: 100vh;
     }
 
-    .tut .card .img {
+    .tut .cardbox .img {
 
         height: 19em;
         width: 13em;
