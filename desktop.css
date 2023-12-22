@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Carlito:ital,wght@1,400;1,700&family=Foldit&family=Noto+Serif:ital@1&family=Poppins:wght@700&family=Roboto+Slab:wght@500&display=swap');
+
+
 #main {
     width: 100%;
     height: 100vh;
@@ -15,6 +18,12 @@
     position: absolute;
 }
 
+.tagline {
+    left: 684px;
+    font-size: 3.5rem;
+    font-weight: 600;
+    top: 377px;
+}
 
 .zestlogo img {
     width: 100%;
@@ -48,7 +57,7 @@
 
 .hero {
     position: absolute;
-    top: 50%;
+    bottom: 0;
     left: 0;
     transform: translate(0%, -50%);
     display: flex;
@@ -64,26 +73,31 @@
 }
 
 .elem {
-    margin-top: 2.8vh;
-    height: 5.9vw;
+    margin-top: 10px;
+    height:50px;
     position: relative;
     overflow: hidden;
 
 }
 
-h1:nth-child(1) {
+.text-box:nth-child(1) {
     top: 0;
 }
 
-h1 {
+.text-box {
     position: absolute;
     line-height: 0.8;
     top: 100%;
     left: 0%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Aclonica', sans-serif;
+    font-family: 'Carlito', sans-serif;
+    font-family: 'Foldit', sans-serif;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Slab', serif;
     color: #fff;
-    font-weight: 100;
-    font-size: 5.5vw;
+    font-size: 5rem;
+    
 }
 
 button {
