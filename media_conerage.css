@@ -109,6 +109,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: 0.5s ease-in-out;
 }
 
 .profile_card .popular .content h3,
@@ -121,13 +122,34 @@ h2 {
 .profile_card .popular8 .content h3,
 .profile_card .popular9 .content h3,
 .profile_card .popular10 .content h3 {
-    font-size: 1.6rem;
-    color: #fff;
+    font-size: 2.0rem;
+    color: #000000;
     text-align: center;
+    font-weight: bolder;
+    text-decoration: underline;
+    transition: 0.5s ease-in-out;
 }
 
-.profile_card .popular .content p {
+
+
+
+.profile_card.opened.popular.content h3,
+.profile_card.opened.popular2.content h3,
+.profile_card.opened.popular3.content h3,
+.profile_card.opened.popular4.content h3,
+.profile_card.opened.popular5.content h3,
+.profile_card.opened.popular6.content h3,
+.profile_card.opened.popular7.content h3,
+.profile_card.opened.popular8.content h3,
+.profile_card.opened.popular9.content h3,
+.profile_card.opened.popular10.content h3 {
     color: #fff;
+}
+
+
+
+.profile_card .popular .content p {
+    color: #ffffff;
     font-size: 1.2rem;
     text-align: center;
     line-height: 1.2;
@@ -138,6 +160,9 @@ h2 {
     -o-animation-delay: 3.5s;
     animation-delay: 3.5s;
     margin-top: 0;
+    transition: 0.5s ease-in-out;
+
+
 }
 
 .profile_card .popular .content ul,
@@ -166,7 +191,7 @@ h2 {
 .profile_card .popular8 .content ul li i,
 .profile_card .popular9 .content ul li i,
 .profile_card .popular10 .content ul li i {
-    color: #d9d9d9;
+
     font-size: 0.565rem;
 }
 
@@ -179,13 +204,13 @@ h2 {
 .popular8.opened img,
 .popular9.opened img,
 .popular10.opened img {
-    height: 40vh;
+    /* height: 40vh; */
 }
 
 
 
 .popular7.opened img {
-    width: 217px;
+    /* width: 217px; */
 }
 
 
@@ -201,6 +226,19 @@ h2 {
 .popular10.opened .content p {
     height: auto;
     margin-top: 10px;
+}
+
+.popular.opened .content,
+.popular3.opened .content,
+.popular2.opened .content,
+.popular4.opened .content,
+.popular5.opened .content,
+.popular6.opened .content,
+.popular7.opened .content,
+.popular8.opened .content,
+.popular9.opened .content,
+.popular10.opened .content {
+    background: #00000075;
 }
 
 
@@ -405,6 +443,7 @@ h2 {
 
     }
 
+
     .web {
         grid-template-columns: 80px 80px 80px 80px 80px 80px;
         grid-template-rows: 25vh 25vh 25vh 25vh;
@@ -511,13 +550,13 @@ h2 {
     .popular8.opened img,
     .popular9.opened img,
     .popular10.opened img {
-        height: 28vh;
+        /* height: 28vh; */
     }
 
 
 
     .popular7.opened img {
-        width: 190px;
+        /* width: 190px; */
     }
 
 
