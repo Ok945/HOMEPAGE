@@ -426,7 +426,6 @@ body,
 
     @media (max-width: 468px) {
         width: 250px;
-        transform: translateX(-50%);
     }
 
 }
@@ -505,7 +504,6 @@ body,
     .light {
 
         width: 250px;
-        transform: translateX(-50%);
     }
 
     .light::before {
