@@ -8,6 +8,7 @@
 body,
 .wholebody {
     background-color: rgb(36, 34, 34);
+    overflow: hidden;
 }
 
 
@@ -424,9 +425,7 @@ body,
     position: relative;
 
 
-    @media (max-width: 468px) {
-        width: 250px;
-    }
+
 
 }
 
