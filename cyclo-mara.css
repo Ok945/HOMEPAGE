@@ -4,26 +4,30 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .gallery {
-
-
     font-size: 45px;
     font-weight: bold;
+    color: #fff;
+    text-align: center;
 }
 
 .profile-card {
     position: relative;
     width: 100%;
     height: 200vh;
-
     padding: 2em 1em;
     overflow: hidden;
     border-radius: 0.7em;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
 }
 
 .profile-card .profile-img {
@@ -40,29 +44,29 @@
 }
 
 .marathon {
-
     font-size: 45px;
     font-weight: bold;
-
 }
-
-
 
 
 .tut {
     height: 80vh;
     overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .tut .outer {
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: absolute;
+    position: relative;
+    left: -55px;
+    height: 100%;
 }
 
 .tut .cardbox {
-
     width: 140px;
     opacity: 0;
     pointer-events: none;
@@ -84,8 +88,8 @@
 
 
 .tut .cardbox .img {
-    height: 14em;
-    width: 13em;
+    height: 33em;
+    width: 30em;
     position: absolute;
     top: 1.5em;
     border-radius: 1.2em;
@@ -105,39 +109,18 @@
 }
 
 
-.grid {
-    height: 60vh;
-    width: auto;
 
-    display: flex;
-    justify-content: center;
-    align-items: self-start;
-}
 
 .tut .outer-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
-/* 
-.outer-first {
-    left: 30px;
-}
 
-.outer-center {
-    left: 600px;
-}
-
-.outer-second {
-    right: 150px;
-} */
-
-
-.tut .outer-second .cardbox {
-    animation: animatesecond 15s linear infinite;
-    animation-delay: calc(3s * var(--delay));
-}
 
 
 
@@ -149,12 +132,12 @@
 @keyframes animate {
     0% {
         opacity: 0;
-        transform: translateX(130%) scale(0.5);
+        transform: translateX(130%) scale(0.3);
     }
 
     5%,
     20% {
-        opacity: 0.4;
+        opacity: 0.2;
         transform: translateX(130%) scale(0.7);
         pointer-events: none;
     }
@@ -168,7 +151,7 @@
 
     45%,
     60% {
-        opacity: 0.4;
+        opacity: 0.2;
         transform: translateX(-130%) scale(0.7);
         pointer-events: none;
     }
@@ -176,7 +159,7 @@
     65%,
     100% {
         opacity: 0;
-        transform: translateX(-130%) scale(0.5);
+        transform: translateX(-130%) scale(0.3);
     }
 }
 
@@ -185,14 +168,14 @@
 @keyframes animatesecond {
     0% {
         opacity: 0;
-        transform: translateX(-130%) scale(0.5);
+        transform: translateX(100%) scale(0.5);
         /* Move to the right initially */
     }
 
     5%,
     20% {
         opacity: 0.4;
-        transform: translateX(-130%) scale(0.7);
+        transform: translateX(100%) scale(0.7);
         pointer-events: none;
     }
 
@@ -207,7 +190,7 @@
     45%,
     60% {
         opacity: 0.4;
-        transform: translateX(130%) scale(0.7);
+        transform: translateX(-100%) scale(0.7);
         /* Move to the right */
         pointer-events: none;
     }
@@ -215,15 +198,10 @@
     65%,
     100% {
         opacity: 0;
-        transform: translateX(130%) scale(0.5);
+        transform: translateX(-100%) scale(0.5);
         /* Move to the right further */
     }
 }
-
-
-
-
-
 
 
 
@@ -239,13 +217,15 @@
         align-items: center;
         justify-content: center;
     }
-
-    .outer-center {
-        left: 110px;
-    }
-
     .tut {
         height: 100vh;
+        flex-direction: column;
+
+    }
+
+
+    .tut .outer {
+        left: 0px;
     }
 
     .tut .cardbox .img {
@@ -254,18 +234,9 @@
         width: 13em;
     }
 
-    .grid {
-        height: 50vh;
-    }
-
-    .grid-2 {
-        display: none;
-    }
-
-
-    .outer-first,
-    .outer-second {
-        left: 140px;
+    .tut .cardbox {
+        animation: animatesecond 15s linear infinite;
+        animation-delay: calc(3s * var(--delay));
     }
 
 
