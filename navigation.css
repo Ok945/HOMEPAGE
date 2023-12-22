@@ -183,7 +183,7 @@ a:hover {
 .nav__content {
 	position: fixed;
 	visibility: hidden;
-	top: 90px;
+	top:50px;
 	right: 0px;
 	width: 280px;
 	text-align: left;
@@ -305,7 +305,7 @@ body.nav-active .nav {
 body.nav-active .nav:before,
 body.nav-active .nav:after {
 	width: 250px;
-	height: 100vh;
+	height: 90vh;
 	border-radius: 15px;
 }
 
