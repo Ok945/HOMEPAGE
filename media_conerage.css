@@ -2,7 +2,8 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    /* background: radial-gradient(circle at center top, #ffffff, transparent), linear-gradient(to bottom, #ffffff, #674dfe); */
+    /* background: linear-gradient(45deg, rgb(216 171 243 / 47%), rgb(27 48 119 / 46%)); */
+
 }
 
 ul {
@@ -27,7 +28,10 @@ ul {
     height: auto;
     width: 100%;
     text-align: center;
+
 }
+
+.head h2 {}
 
 h2 {
     padding-top: 1vh;
@@ -85,7 +89,7 @@ h2 {
     width: 100%;
     position: relative;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
     border-radius: 0.6rem;
     display: block;
     top: 0;
@@ -214,6 +218,37 @@ h2 {
 }
 
 
+
+
+
+
+
+
+
+
+.profile_card .popular2 .content p,
+.profile_card .popular3 .content p,
+.profile_card .popular4 .content p,
+.profile_card .popular5 .content p,
+.profile_card .popular6 .content p,
+.profile_card .popular7 .content p,
+.profile_card .popular8 .content p,
+.profile_card .popular9 .content p,
+.profile_card .popular10 .content p {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.4;
+    height: 0;
+    overflow: hidden;
+    -moz-animation-delay: 3.5s;
+    -webkit-animation-delay: 3.5s;
+    -o-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+    margin-top: 0;
+}
+
+
 .popular.opened .content p,
 .popular2.opened .content p,
 .popular3.opened .content p,
@@ -246,27 +281,7 @@ h2 {
 
 
 
-.profile_card .popular2 .content p,
-.profile_card .popular3 .content p,
-.profile_card .popular4 .content p,
-.profile_card .popular5 .content p,
-.profile_card .popular6 .content p,
-.profile_card .popular7 .content p,
-.profile_card .popular8 .content p,
-.profile_card .popular9 .content p,
-.profile_card .popular10 .content p {
-    color: #fff;
-    font-size: 1.2rem;
-    text-align: center;
-    line-height: 1.4;
-    height: 0;
-    overflow: hidden;
-    -moz-animation-delay: 3.5s;
-    -webkit-animation-delay: 3.5s;
-    -o-animation-delay: 3.5s;
-    animation-delay: 3.5s;
-    margin-top: 0;
-}
+
 
 .profile_card .popular {
     position: relative;

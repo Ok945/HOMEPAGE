@@ -10,6 +10,8 @@ body,
     background-color: rgb(36, 34, 34);
     overflow-x: hidden;
     color: #fff;
+
+    
 }
 
 
@@ -485,6 +487,8 @@ body,
     height: 400px;
     position: relative;
     padding: 10px;
+
+    font-size: 2rem;
 }
 
 

@@ -4,7 +4,10 @@ ul {
 }
 
 .footer-section {
-    background: #151414;
+    /* background: #0f0c29;
+    background: -webkit-linear-gradient(to left, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to left, #24243e, #302b63, #0f0c29); */
+ background: linear-gradient(45deg, rgb(216 171 243 / 47%), rgb(27 48 119 / 46%));
     position: relative;
 }
 
@@ -61,7 +64,7 @@ ul {
 .footer-text p {
     margin-bottom: 14px;
     font-size: 14px;
-    color: #7e7e7e;
+    color: #ffffff;
     line-height: 28px;
 }
 
@@ -126,12 +129,14 @@ ul {
 }
 
 .footer-widget ul li a:hover {
-    color: #7a14ff;
+    color: #000000;
+    font-weight: 500;
 }
 
 .footer-widget ul li a {
-    color: #878787;
+    color: #ffffff;
     text-transform: capitalize;
+    font-size: 1.35rem;
 }
 
 .subscribe-form {
