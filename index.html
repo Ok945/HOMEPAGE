@@ -58,10 +58,6 @@
             /* Add other styles for positioning or animation */
         }
 
-        #wholebody {
-            display: none;
-            /* Hide the content initially */
-        }
     </style>
 
 
@@ -195,7 +191,7 @@
 
                 <div class="content" data-aos="fade-right">
                     <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5IoIJC34d1U"
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gyhpF9dtdog"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
@@ -713,17 +709,7 @@
     <div id="preloader">
         <img src="loader.gif" alt="Loading..." />
     </div>
-    <script>
-        window.addEventListener('load', function () {
-            var preloader = document.getElementById('preloader');
-            var content = document.getElementById('wholebody');
-            // Hide preloader and show content when everything is loaded
-            preloader.style.display = 'none';
-            content.style.display = 'block';
-        });
 
-
-    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -775,6 +761,19 @@
             var div = document.querySelector('.light');
             div.classList.toggle('active'); // Toggle the 'active' class
         }
+
+
+    </script>
+
+
+    <script>
+        window.addEventListener('load', function () {
+            var preloader = document.getElementById('preloader');
+            var content = document.getElementById('wholebody');
+            // Hide preloader and show content when everything is loaded
+            preloader.style.display = 'none';
+            content.style.display = 'block';
+        });
 
 
     </script>
