@@ -541,27 +541,3 @@ body,
 
 
 
-
-
-
-
-/* // footer */
-
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-}
-
-.footer h1,
-.footer h2,
-.footer h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.footer p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-}
