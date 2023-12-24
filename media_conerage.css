@@ -147,7 +147,7 @@ h2 {
 .profile_card.opened.popular8.content h3,
 .profile_card.opened.popular9.content h3,
 .profile_card.opened.popular10.content h3 {
-    color: #fff;
+    /* color: #fff; */
 }
 
 
@@ -259,8 +259,8 @@ h2 {
 .popular8.opened .content p,
 .popular9.opened .content p,
 .popular10.opened .content p {
-    height: auto;
-    margin-top: 10px;
+    /* height: auto; */
+    /* margin-top: 10px; */
 }
 
 .popular.opened .content,
@@ -273,7 +273,7 @@ h2 {
 .popular8.opened .content,
 .popular9.opened .content,
 .popular10.opened .content {
-    background: #00000075;
+    /* background: #00000075; */
 }
 
 
@@ -585,8 +585,8 @@ h2 {
     .popular8.opened .content p,
     .popular9.opened .content p,
     .popular10.opened .content p {
-        height: auto;
-        margin-top: 10px;
+        /* height: auto; */
+        /* margin-top: 10px; */
     }
 
 
